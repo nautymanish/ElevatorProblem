@@ -30,8 +30,10 @@ jobs:
     steps:
       - name: Clone Repository
         uses: actions/checkout@v2
-      - name: Analyze with SonarCloud
-        uses: sonarsource/sonarcloud-github-action@master
+      ###############- name: Analyze with SonarCloud
+      ###############  uses: sonarsource/sonarcloud-github-action@master
+      - name: SonarScanner for .NET 5 with pull request decoration support
+        uses: highbyte/sonarscan-dotnet@2.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
