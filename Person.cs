@@ -16,5 +16,10 @@ namespace ElevatorProblem
             Console.Write("This elevator is goign to be arrving first.");
             Console.Write(elevator.ElevatorName);
         }
+        
+        public void Update(Elevator elevator)
+        {
+           
+        }
     }
 }
